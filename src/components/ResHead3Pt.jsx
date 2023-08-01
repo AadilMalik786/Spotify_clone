@@ -39,7 +39,7 @@ class ResHead3Pt extends Component {
         return (
             <>
 
-                <div className="badacontainerfirst " style={{ backgroundColor: "red" }} onClick={(e)=>{
+                <div className="badacontainerfirst "  onClick={(e)=>{
                     if (e.target) {
                             this.setState({isPlaying:!this.state.isPlaying})
                             console.log(this.state.isPlaying);
