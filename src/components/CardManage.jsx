@@ -10,35 +10,43 @@ import piano from "../assets/images/peaceful.jpeg";
 import deep from "../assets/images/deep.jpeg";
 import study from "../assets/images/study.jpeg";
 import focus from "../assets/images/flow.jpeg";
+import musical from "../audio/music.mp3"
+import Baller from "../audio/Baller.mp3"
+import Elevated from "../audio/Elevated.mp3"
+import NeversayNever from "../audio/neversaynever.mp3"
 class CardManage extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+    }
 
     cardsData = [
         {
             img: piano,
             pieceful: "Peaceful Piano",
             linefirst: "Peaceful piano to help ",
-            linesecond: "you slow down.."
+            linesecond: "you slow down..",
+            music:musical
         },
         {
             img: deep,
             pieceful: "Deep Focus",
             linefirst: "Keep calm and focus",
-            linesecond: "with ambient and pos.."
+            linesecond: "with ambient and pos..",
+            music:Baller
         },
         {
             img: study,
             pieceful: "Instrumental Study",
             linefirst: "Focus with soft study",
-            linesecond: "music in the.."
+            linesecond: "music in the..",
+            music:Elevated
         },
         {
             img: focus,
             pieceful: "Focus Flow",
             linefirst: "Uptempo instrumental",
-            linesecond: "hip hop beats."
+            linesecond: "hip hop beats.",
+            music:NeversayNever   
         },
     ];
     render() {
@@ -51,7 +59,7 @@ class CardManage extends Component {
                     </div>
                     <div style={{ display: "flex", gap: "10px", backgroundColor: "ble", justifyContent: "space-evenly",flexWrap:"wrap" }}>
                         {this.cardsData.map((value,index) => {
-                            return <Head3Pt key={index} img={value.img} pieceful={value.pieceful} linefirst={value.linefirst} linesecond={value.linesecond} />
+                            return <Head3Pt key={index} img={value.img} pieceful={value.pieceful} linefirst={value.linefirst} linesecond={value.linesecond} music={value.music} />
 
                         })}
                     </div>

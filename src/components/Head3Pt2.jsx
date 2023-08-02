@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import { CgPlayButton } from 'react-icons/cg';
-// import AudioComp from "./AudioComp";
-
-class ResHead3Pt2 extends Component {
+class Head3Pt2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,7 +10,6 @@ class ResHead3Pt2 extends Component {
             // isPlay: false
         };
         this.audioRef = React.createRef(); 
-
     }
     handlePlayPause = () => {
         const audio = this.audioRef.current;
@@ -37,15 +34,12 @@ class ResHead3Pt2 extends Component {
 
         // console.log("clicked");
         // console.log(this.state.id);
-    };
-   
-   
+    };      
     render() {
-        const { img, pieceful,music } = this.props;
+        const { img, pieceful, linefirst, linesecond,music } = this.props;
         return (
             <>
-             <div className="badacontainersecond" 
-             onClick={(e) => {
+            <div className="badacontainer"  onClick={(e) => {
                 if (e.target) {
                     // this.setState({isPlaying:!this.state.isPlaying})
                     // console.log(this.state.isPlaying);
@@ -54,24 +48,26 @@ class ResHead3Pt2 extends Component {
                     // }))
                     // this.setState({isPlay:!this.state.isPlay})
                     console.log(this.state.isPlaying);
-                }}} >
-                        <div className="photocontainersecond"  onClick={()=>{this.handlePlayPause()}} >
-                            <div className="firstimagesecond">
-                                <img className="firstimageasecond" src={img} alt={pieceful} />
-                                <div className="textandsecond" >
-                                    <div className="instrumentalsecond">{pieceful}</div>
-                                </div>
-                            </div>
+                }
+            }}   >
+                <div className="photocontainer" key={Math.random() * 1000}   >
+                    <div className="firstimage" style={{ position: "relative" }}>
+                        <button className="playingful"  onClick={() => { this.handlePlayPause() }} style={{ position: "absolute" }}><CgPlayButton /></button>
+                        <img className="firstimagea" src={img}></img>
+                        <div className="textand">
+                            <div className="instrumental">{pieceful}</div>
+                            <div className="focuswith">{linefirst}</div>
+                            <div className="musicin">{linesecond}</div>
                         </div>
                     </div>
-                    <audio ref={this.audioRef} >
+                </div>
+            </div>
+              <audio ref={this.audioRef} >
               <source src={music} type="audio/mpeg" />
               Your browser does not support the audio element.
           </audio>
-                   
-            </>
+          </>
         )
     }
 }
-
-export default ResHead3Pt2;
+export default Head3Pt2;

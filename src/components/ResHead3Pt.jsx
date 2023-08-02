@@ -8,46 +8,57 @@ class ResHead3Pt extends Component {
         this.state = {
             isPlaying: false,
             id: Math.random() * 1000,
-            playaudio: true,
-            isPlay: false
+            // playaudio: true,
+            // isPlay: false
         };
-        this.audioRef = React.createRef();
+        this.audioRef = React.createRef(); 
 
 
         // console.log(props);
     }
     handlePlayPause = () => {
         const audio = this.audioRef.current;
-        if (this.state.isPlaying) {
-            audio.pause(); 
+        if (this.state.isPlaying ) {
+            audio.pause();
+            // console.log("pause");
+            
         }
-
         else {
             const audioElements = document.querySelectorAll("audio");
-            audioElements.forEach((element)=>element.pause());
+            audioElements.forEach((element) => element.pause());
+            audio.currentTime="0";
             this.audioRef.current.play()
+            // console.log("play");
         }
-        
+       
+    //     this.setState((prevState) => ({
+    //   isPlaying: !prevState.isPlaying
+      
+    // }));
 
-        console.log("clicked");
-        console.log(this.state.id);
+
+        // console.log("clicked");
+        // console.log(this.state.id);
     };
+   
 
 
     render() {
         const { img, pieceful, music } = this.props;
         return (
             <>
-
-                <div className="badacontainerfirst "  onClick={(e)=>{
+                <div className="badacontainerfirst " onClick={(e) => {
                     if (e.target) {
-                            this.setState({isPlaying:!this.state.isPlaying})
-                            console.log(this.state.isPlaying);
-                            
-                        
+                        // this.setState({isPlaying:!this.state.isPlaying})
+                        // console.log(this.state.isPlaying);
+                        // this.setState((prevState) => ({
+                        //     isPlaying: !prevState.isPlaying                        
+                        // }))
+                        // this.setState({isPlay:!this.state.isPlay})
+                        console.log(this.state.isPlaying);
                     }
                 }}  >
-                    <div className="photocontainerfirst" onClick={() => { this.handlePlayPause() }} key={Math.random() * 1000}  >
+                    <div className="photocontainerfirst" onClick={()=>{this.handlePlayPause()}}    >
                         <div className="firstimagefirst">
                             <img className="firstimageafirst" src={img} alt={pieceful} />
                             <div className="textandfirst" >
@@ -56,10 +67,11 @@ class ResHead3Pt extends Component {
                         </div>
                     </div>
                 </div>
-                <audio ref={this.audioRef} >
-                    <source src={music} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                </audio>
+                
+                    <audio ref={this.audioRef} >
+                        <source src={music} type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
 
 
             </>
