@@ -322,7 +322,7 @@
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        background-color: green;
+        /* background-color: green; */
         cursor: pointer;
     }
     .textcontainer {
