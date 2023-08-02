@@ -38,8 +38,8 @@ class ResCardManager2 extends Component {
     render() {
         return (
             <>
-                <div className="textcontainer" style={{ color: "white" }}>
-                    <div className="focus" style={{width:"155px",backgroundColor:"red"}}>Spotify Playlists</div>
+                <div className="textcontainer" style={{ color: "white",display:"flex",justifyContent:"flex-start"  }}>
+                    <div className="focus" style={{width:"170px",backgroundColor:"red"}}>Spotify Playlists</div>
                 </div>
                 <div style={{ display: "flex", gap: "10px", backgroundColor: "bue", overflowX: "auto" }}>
                     {this.cardsData.map((value, index) => {
