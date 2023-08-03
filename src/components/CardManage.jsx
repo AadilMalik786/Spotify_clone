@@ -57,7 +57,7 @@ class CardManage extends Component {
                         <div className="focus">Focus</div>
                         <div className="show">Show all</div>
                     </div>
-                    <div style={{ display: "flex", gap: "10px", backgroundColor: "ble", justifyContent: "space-evenly",flexWrap:"wrap" }}>
+                    <div style={{ display: "flex", gap: "10px", backgroundColor: "ble", justifyContent: "space-evenly" }}>
                         {this.cardsData.map((value,index) => {
                             return <Head3Pt key={index} img={value.img} pieceful={value.pieceful} linefirst={value.linefirst} linesecond={value.linesecond} music={value.music} />
 

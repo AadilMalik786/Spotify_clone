@@ -14,31 +14,31 @@ import SearchCom from "./components/SearchCom";
 // import AudioComp from "./components/AudioComp";
 // import ResHead3Pt from "./components/ResHead3Pt";
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          onHam:false,
-          onSearch:false,
-          
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      onHam: false,
+      onSearch: false,
 
     }
-    handleHam = () => {
-        this.setState((prevState) => ({
-          onHam: !prevState.onHam,
-        }));
-      };
-      handleSearch = () => {
-        this.setState((prevState) => ({
-          onSearch: !prevState.onSearch,
-        }));
-      };
 
-    
-    render() {
-        return (
-            <>
-                {this.state.onHam &&  <Hamburger handleHam={this.handleHam} />}
+  }
+  handleHam = () => {
+    this.setState((prevState) => ({
+      onHam: !prevState.onHam,
+    }));
+  };
+  handleSearch = () => {
+    this.setState((prevState) => ({
+      onSearch: !prevState.onSearch,
+    }));
+  };
+
+
+  render() {
+    return (
+      <>
+        {this.state.onHam && <Hamburger handleHam={this.handleHam} />}
         {this.state.onSearch ? (
           <section style={{ backgroundColor: "black", paddingTop: "15px", height: "800px", overflowY: "hidden" }}>
             <SearchCom handleSearch={this.handleSearch} />
@@ -51,27 +51,27 @@ class App extends Component {
           </div>
         )}
 
-                <section className="ajju" style={{ height: "100vh", width: "100%", backgroundColor: "black", overflow: "hidden" }}>
-                    <div className="parent" style={{ display: "flex", justifyContent: "space-evenly" }}>
-                        <div className="pappa" style={{ position: "relative", overflow: 'hidden',minWidth:"340px", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
-                            <Head></Head>
-                            <Head2></Head2>
-                        </div>
-                        <article className="child" style={{ position: "relative", overflow: 'hidden', width: "300%", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
+        <section className="ajju" style={{ height: "100vh", width: "100%", backgroundColor: "black", overflow: "hidden" }}>
+          <div className="parent" style={{ display: "flex", justifyContent: "space-evenly"  }}>
+            <div className="pappa" style={{ position: "relative", overflow: 'hidden', minWidth: "340px", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
+              <Head></Head>
+              <Head2></Head2>
+            </div>
+            <article className="child" style={{ position: "relative", overflow: 'hidden', width: "300%", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
 
-                            <Head5 handleLogin={this.handleLogin} />
-                            <CardManage handlePlaying={this.handlePlaying}></CardManage>
+              <Head5 handleLogin={this.handleLogin} />
+              <CardManage handlePlaying={this.handlePlaying}></CardManage>
 
-                        </article>
-                    </div>
-                    <article style={{ display: "flex", width: "100%", justifyContent: "space-evenly", overflow: 'hidden' }}>
-                        <Head4></Head4>
-                    </article>
+            </article>
+          </div>
+          <article style={{ display: "flex", width: "100%", justifyContent: "space-evenly", overflow: 'hidden' }}>
+            <Head4></Head4>
+          </article>
 
-                </section>
-            </>
-        )
+        </section>
+      </>
+    )
 
-    }
+  }
 }
 export default App;
