@@ -51,13 +51,13 @@ class App extends Component {
           </div>
         )}
 
-        <section className="ajju" style={{ height: "100vh", width: "100%", backgroundColor: "black", overflow: "hidden" }}>
-          <div className="parent" style={{ display: "flex", justifyContent: "space-evenly"  }}>
-            <div className="pappa" style={{ position: "relative", overflow: 'hidden', minWidth: "340px", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
+        <section className="ajju" style={{ height: "100vh", width: "100%", backgroundColor: "black" }}>
+          <div className="parent" style={{ display: "flex", justifyContent: "space-evenly"}}>
+            <div className="pappa" style={{ position: "relative", minWidth: "340px", height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" ,backgroundColor:"green",gap:"5px"}}>
               <Head></Head>
               <Head2></Head2>
             </div>
-            <article className="child" style={{ position: "relative", overflow: 'hidden', width: "300%", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
+            <article className="child" style={{ position: "relative", overflow: 'hidden', width: "300%", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
 
               <Head5 handleLogin={this.handleLogin} />
               <CardManage handlePlaying={this.handlePlaying}></CardManage>

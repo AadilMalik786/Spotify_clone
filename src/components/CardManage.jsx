@@ -51,7 +51,7 @@ class CardManage extends Component {
     ];
     render() {
         return (
-            <div className="box3" style={{height:"1000vh"}} >
+            <div className="box3" style={{height:"100vh"}} >
                 <div className="hamshi" style={{ marginTop: "100px", display: "flex", flexDirection: "column", gap: "25px" }}>
                     <div className="textcontainer" style={{ color: "white" }}>
                         <div className="focus">Focus</div>
