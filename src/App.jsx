@@ -45,7 +45,7 @@ class App extends Component {
           </section>
         ) : this.state.onHam ? null : (
           // Content inside the response div
-          <div className="response" id="reszero" style={{ backgroundColor: "#121212", height: "1390px" }}>
+          <div className="response" id="reszero" style={{ backgroundColor: "#121212", height: "auto" }}>
             <Head6 handleHam={this.handleHam} handleSearch={this.handleSearch} />
             <ResCardManager1 />
           </div>
