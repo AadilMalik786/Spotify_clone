@@ -51,13 +51,13 @@ class CardManage extends Component {
     ];
     render() {
         return (
-            <div className="box3" >
+            <div className="box3" style={{height:"1000vh"}} >
                 <div className="hamshi" style={{ marginTop: "100px", display: "flex", flexDirection: "column", gap: "25px" }}>
                     <div className="textcontainer" style={{ color: "white" }}>
                         <div className="focus">Focus</div>
                         <div className="show">Show all</div>
                     </div>
-                    <div style={{ display: "flex", gap: "10px", backgroundColor: "ble", justifyContent: "space-evenly" }}>
+                    <div style={{ display: "flex", gap: "10px", backgroundColor: "ble", justifyContent: "space-evenly",flexWrap:"wrap" }}>
                         {this.cardsData.map((value,index) => {
                             return <Head3Pt key={index} img={value.img} pieceful={value.pieceful} linefirst={value.linefirst} linesecond={value.linesecond} music={value.music} />
 
