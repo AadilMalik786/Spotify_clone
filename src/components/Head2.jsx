@@ -19,7 +19,7 @@ class Head2 extends Component {
            {
     return (
       <>
-        <div className="box2" style={{ position: "" }}>
+        <div className="box2" style={{ overflowY:"auto" }}>
           <div className="rle">
             <div className="krk" style={{ position: "relative" }}>
               <div className="peelus" style={{ display: "flex",marginTop:"10px" }}>
@@ -70,9 +70,9 @@ class Head2 extends Component {
           </div>
           <section className="box9parent">
             <div className="box9container">
-              <span className="privacy">Legal</span>
-              <span className="privacy">Privacy Center</span>
-              <span className="privacy">Privacy Policy</span>
+              <div className="privacy">Legal</div>
+              <div className="privacy">Privacy Center</div>
+              <div className="privacy">Privacy Policy</div>
             </div>
             <div className="box10container">
               <span className="cookies">Cookies</span>
