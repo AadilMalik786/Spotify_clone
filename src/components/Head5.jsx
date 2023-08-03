@@ -8,7 +8,7 @@ class Head5 extends Component {
     render() {
         return(     
             <>
-                <div className="box5" >
+                <div className="box5"  >
                     <div className="box6">
                         <div className="leftarrow"><IoIosArrowBack/></div>
                         <div className="rightarrow"><IoIosArrowForward/></div>

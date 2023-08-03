@@ -53,7 +53,7 @@ class App extends Component {
 
                 <section className="ajju" style={{ height: "auto", width: "100%", backgroundColor: "black", overflow: "hidden" }}>
                     <div className="parent" style={{ display: "flex", justifyContent: "space-evenly" }}>
-                        <div className="pappa" style={{ position: "relative", overflow: 'hidden', height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
+                        <div className="pappa" style={{ position: "relative", overflow: 'hidden',minWidth:"340px", height: "35.5rem", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
                             <Head></Head>
                             <Head2></Head2>
                         </div>

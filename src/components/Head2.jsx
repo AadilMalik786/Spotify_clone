@@ -56,7 +56,7 @@ class Head2 extends Component {
             </div>
           </div>
 
-          <div className="bigcontainer" style={{ height: "133px", width: "90%", position: "absolute", left: "5%", top: "220px", overflowY: "auto", borderRadius: "10px" }}>
+          <div className="bigcontainer" style={{ height: "133px", width: "300px", position: "absolute", left: "5%", top: "220px", overflowY: "auto", borderRadius: "10px" }}>
             <div className="box7container">
               <div className="create">Create your first playlist</div>
               <div className="easy">It's easy we will help you</div>

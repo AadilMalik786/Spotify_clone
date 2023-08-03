@@ -4,7 +4,7 @@ class Head extends Component {
     render() {
         return (
             <>
-                <span className="box1" >
+                <span className="box1"  >
                     <div className="box1b" >
                         <div className="homelogo">  <FaHome/></div>
                         <div className="home">home</div>

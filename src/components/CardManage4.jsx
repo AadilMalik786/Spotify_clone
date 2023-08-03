@@ -50,7 +50,7 @@ class CardManage4 extends Component {
     render() {
         return (
             <>
-                <div className="textcontainer" style={{ color: "white" }}>
+                <div className="textcontainer" style={{ color: "white" ,minWidth:"62%",gap:"54%"}}>
                     <div className="focus">Sound of India</div>
                     <div className="show">Show all</div>
                 </div>
