@@ -51,7 +51,7 @@ class CardManage extends Component {
     ];
     render() {
         return (
-            <div className="box3" style={{height:"100vh"}} >
+            <div className="box3" style={{height:"100vh",marginTop:"5px"}} >
                 <div className="hamshi" style={{ marginTop: "100px", display: "flex", flexDirection: "column", gap: "25px" }}>
                     <div className="textcontainer" style={{ color: "white" }}>
                         <div className="focus">Focus</div>
@@ -66,7 +66,7 @@ class CardManage extends Component {
                     <CardManage2></CardManage2>
                     <CardManage3></CardManage3>
                     <CardManage4></CardManage4>
-                    <div className="footcompo">
+                    <div className="footcompo" style={{flexWrap:"wrap"}}>
                         <div className="compi">
                             <div className="pany" style={{ color: "white", fontWeight: "bold", fontSize: "17px" }}>Company</div>
                             <div className="job">About</div>

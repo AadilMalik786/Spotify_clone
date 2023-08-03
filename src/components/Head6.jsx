@@ -9,7 +9,7 @@ class Head6 extends Component {
     render() {
         return (
             <>
-                <div className="parenttop"  >
+                <div className="parenttop" >
                     <div className="logospot" style={{ color: "white" }}><SlSocialSpotify /></div>
                     <div className="app" >
                         <span className="sec"   style={{ color: "white" }} onClick={this.props.handleSearch}><FaSearch /></span>

@@ -51,9 +51,9 @@ class CardManage2 extends Component {
     render() {
         return (
             <>
-                <div className="textcontainer" style={{ color: "white",backgroundColor:"aqua",minWidth:"62%",gap:"54%" }}>
-                    <div className="focus" style={{backgroundColor:"red"}}>Spotify Playlists</div>
-                    <div className="show" style={{backgroundColor:"red"}}>Show all</div>
+                <div className="textcontainerspotify" style={{ color: "white"}}>
+                    <div className="focus" >Spotify Playlists</div>
+                    <div className="show" >Show all</div>
                 </div>
                 <div style={{ display: "flex", gap: "10px", backgroundColor: "bue", justifyContent: "space-evenly", flexWrap: "wrap" }}>
                     {this.cardsData.map((value, index) => {

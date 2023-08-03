@@ -22,7 +22,7 @@ class Head2 extends Component {
         <div className="box2" style={{ position: "" }}>
           <div className="rle">
             <div className="krk" style={{ position: "relative" }}>
-              <div className="peelus" style={{ display: "flex" }}>
+              <div className="peelus" style={{ display: "flex",marginTop:"10px" }}>
                 <div className="box2a">
                   <span className="librarylogo"><BiLibrary /></span>
                   <span className="labname">Your Library</span>
@@ -56,7 +56,7 @@ class Head2 extends Component {
             </div>
           </div>
 
-          <div className="bigcontainer" style={{ height: "133px", width: "300px", position: "absolute", left: "5%", top: "220px", overflowY: "auto", borderRadius: "10px" }}>
+          <div className="bigcontainer" style={{ height: "133px", width: "300px", position: "absolute", left: "5%", top: "180px", overflowY: "auto", borderRadius: "10px" }}>
             <div className="box7container">
               <div className="create">Create your first playlist</div>
               <div className="easy">It's easy we will help you</div>
@@ -80,7 +80,7 @@ class Head2 extends Component {
               <span className="cookies">Accessibillity</span>
             </div>
             <div className="cook">Cookies</div>
-            <div className="buttonthird">
+            <div className="buttonthird" style={{marginTop:"30px"}}>
               <button className="buttonfourth">
                 <span className="globelogo"><BsGlobe2 /></span>
                 <span className="en">English</span>

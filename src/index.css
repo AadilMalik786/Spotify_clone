@@ -171,6 +171,22 @@
     /* flex-grow: 2; */
     gap: 62%;
 }
+.textcontainerspotify {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-grow: 2; */
+    /* background-color: aqua; */
+    gap: 54%;
+}
+.textcontainerspotify4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-grow: 2; */
+    /* background-color: aqua; */
+    gap: 54%;
+}
 
 .focus {
     font-size: 25px;
@@ -291,7 +307,7 @@
 .box4 {
     height: 62px;
     width: 98.5%;
-    display: flex;
+    /* margin-bottom: 200px; */
     background-image: linear-gradient(90deg, #af2896, #509bf5);
     display: flex;
     justify-content: space-evenly;
@@ -532,6 +548,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 30px;
+    /* background-color: red; */
 
 }
 
@@ -644,6 +662,7 @@
     color: white;
     display: flex;
     font-size: 22px;
+    flex-wrap: ;
     gap: 15px;
 }
 

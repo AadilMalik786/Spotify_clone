@@ -343,3 +343,36 @@
     }
 
 }
+
+@media screen and (min-width:770px) and (max-width:900px){
+    
+.textcontainerspotify {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-grow: 2; */
+    gap: 20%;
+    /* background-color: green; */
+}
+.textcontainerspotify4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-grow: 2; */
+    gap: 20%;
+    /* background-color: green; */
+}
+.focus {
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    cursor: pointer;
+}
+.show {
+    color: #b3b3b3;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+}
+}
