@@ -337,6 +337,7 @@
     height: 50px;
     width: 150px;
     border-radius: 25px;
+    border: none;
 }
 
 .box5 {
@@ -481,6 +482,7 @@
 
     font-size: 15px;
     border-radius: 15px;
+    border: none;
 
 }
 

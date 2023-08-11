@@ -65,7 +65,7 @@ class Head2 extends Component {
             <div className="box8container">
               <div className="lets">Let's find some podcasts to <br />follow.</div>
               <div className="will">We'll keep you update on new <br />episodes.</div>
-              <div className="buttonsecond"> <button className="browse">Browse podcasts</button></div>
+              <div className="buttonsecond"> <button className="browse" style={{border:"none"}}>Browse podcasts</button></div>
             </div>
           </div>
           <section className="box9parent">
