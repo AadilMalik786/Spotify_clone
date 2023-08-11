@@ -155,7 +155,7 @@
 }
 
 .box3 {
-    height: 555px;
+    /* height: 545px; */
     width: 99%;
     border-radius: 10px;
     background-color: #121212;
@@ -350,7 +350,7 @@
     background: #121212;
     position: absolute;
     z-index: 1;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 0px 0px 0px;
     top: 6px;
 }
 
@@ -759,4 +759,16 @@
 }
 #reszero{
     display: none;
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: aqua;
+    border: 2px solid transparent;
+}
+::-webkit-scrollbar-track{
+    background-color: #121212;
+
 }
